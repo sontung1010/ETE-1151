@@ -1,0 +1,5 @@
+﻿  Lab 12.cpp
+E:\du học Mỹ\CLASSES\ETE1151L\Lab 12\Lab 12\Lab 12\Lab 12.cpp(68,10): warning C4101:  'cPtr': unreferenced local variable
+E:\du học Mỹ\CLASSES\ETE1151L\Lab 12\Lab 12\Lab 12\Lab 12.cpp(66,10): warning C4101:  'aPtr': unreferenced local variable
+E:\du học Mỹ\CLASSES\ETE1151L\Lab 12\Lab 12\Lab 12\Lab 12.cpp(67,10): warning C4101:  'bPtr': unreferenced local variable
+  Lab 12.vcxproj -> E:\du học Mỹ\CLASSES\ETE1151L\Lab 12\Lab 12\Debug\Lab 12.exe

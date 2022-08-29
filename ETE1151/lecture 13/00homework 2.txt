@@ -1,0 +1,16 @@
+1) You generate N random number and print M per row
+use tab to separate numbers
+
+enter seed 
+enter N 
+enter M
+
+N=12 M=5
+--	--	--	--	--
+--	--	--	--	--
+--	--
+
+2) Generate N random numbers (symbols -100, 0, 100, 200, 300) print M per row.
+
+enter N 
+enter M 

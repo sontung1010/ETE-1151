@@ -1,0 +1,99 @@
+When do you need getchar() to read \n?
+
+3 scenarios
+
+10 read a number, read a string 
+123\nhello class \n
+ 
+when you read a number we are looking at \n 
+thus we need getchar to skip past \n
+
+If you do not have getchar, gets_s it reads \n as the string 
+
+2) read str1, read str2
+hello my friend\nwhat up\n
+
+First gets_s reads hello my friend\n, we are looking at w character
+so next gets_s reads what up\n
+
+conclusion: no getchar
+
+3) read num1, read num2 
+	12\n 	\n\n24\n
+
+reading numbers all the white spaces are skipped. Obviously no getchar()
+
+============================================================
+
+Programs we write is to process information and display results. 
+
+A preprocessor directive is a message to C++ preprocessor. Lines that begin with # are processed by the preprocessor
+
+Example: 
+#include <iostream>
+
+This must be included for any program that outputs data to the screen or input data from the keyboard
+
+If you do not include this, is cout recognized? No
+
+main is part of every C++ program. The parenthesis after main indicate that main is program building block called a function
+
+add2num(int num1, int num2)
+
+Here add2num is a function it includes ( and ) 
+
+C++ programs consist of one or more functions.
+
+Exactly one function must be named main. C++ executes at main even if it is not the first function in the program.
+
+The std:: before cout is required unless we use namespace std;
+
+The name cin (standard input stream) and cerr (standard error stream) also belong to namespace std.
+
+see Sumtwonumbers02
+(rea two numbers and add them in C++)
+
+=============================================================
+Decisions 
+
+involves selection structure: using if statements to select what to executes
+
+if (condition) { 	
+	action 1
+}
+	perform action 1 if the condition is true
+
+
+if (condition) { 
+	action 1
+} else 
+	action 2 
+
+	perform action 1 if the condition is true else you do action 2 
+
+switch: perform one of many different actions
+
+
+bool xx;  	// boolean variable holds true or false 
+
+equality  		==
+not equality 		!=
+greater than or equal 	>=
+greater than 		> 
+
+if (num > 90) {
+    y = num + 3;
+    cout << "hello\n"; 
+} else {
+    y = num + 10; 
+    cout << "hi\n";
+}
+
+
+num = 100; 
+xx = (num > 20);
+if (xx == true) {
+	cout << "hello";
+} else {
+	cout << "hi\n";
+}

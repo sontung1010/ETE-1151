@@ -1,0 +1,55 @@
+The first task for everyone learning a program is to get the machine to print on the screen. 
+
+Below is a complete program in C.
+
+main()
+{
+	printf("hellow class\n");
+}
+
+Start Visual Studio 
+File->New->Project 
+
+main()
+Every program has a function main where execution begins. The parenthesis following main indicates to the compiler that it is a function.
+
+
+{
+A left { begins the body of each function. A corresponding right brace } must end the function.
+
+printf()
+C system contains a standard library of functions that ca be used in the programs. This function prints to the screen "hello class\n"
+
+"hello class\n" is an argument to the function.
+
+The two charactor \n (read backslash n) represent a single character. It is a non printing character. Its effect is to advance the cursor on the screen to
+a new line 
+
+printf("hello");
+printf("class");
+printf("\n");
+
+The above three lines is equivalent to the previous printf statement.
+
+Our goal is to print to screen 
+hello "class"
+
+The following code will not work 
+printf("hello "class"\n");
+
+To print " we need to type \"
+
+Other escape characters
+
+\t	(horizontal tab)
+
+\\	print single backslash 
+\"	print single "
+\'	print single '
+\a	alert. sound system bell 
+
+What is the exact putput of the following code
+printf("my\nname\is\nnot\nJohn\n");
+
+
+

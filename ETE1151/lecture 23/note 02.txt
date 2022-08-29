@@ -1,0 +1,118 @@
+Pass arguments to functions
+
+1) Pass by Value
+
+a copy of argument value is made and passed on the called function. Changes to the copy does not affect the original variable's value
+
+disadvantage: if x is large data item, copying data can take considerable amount of execution time and memory space 
+
+pass x by value 
+double squareByValue(double x)
+
+
+2) Pass by reference with reference arguments 
+
+allows the called function to modify the original values of the arguments 
+
+enable pograms to pass large data objects and avoid overhead of the passing the objects by value 
+
+to pass something by reference, simply follow the parameter's type in the function by an ampersand (&)
+
+double squareByReference(double &x)
+
+The mentioning x in the body of function actually refers to the original variable in the calling function 
+
+
+3) Pass by reference with pointer arguments 
+
+pointers can be used to modify one or more variables in the caller 
+
+Pointers can be used to pass large data objects to avoid the overhead of apssing the objects by value 
+
+==============================================
+Dynamic memory management
+
+C++ array data structure is fixed in size once it is created. The size is specified with a constant at compile time
+
+Sometimes we want to create an array dynamically at execution time.
+
+C++ enables you to control the allocation and deallocation of memory in a program for objects and for arrays of any built-in or user-defined type
+
+This is known as dynamic memory management and is performed with the operators new and delete.
+
+The new operator to dynamically allocate (reserve) the exact amount of memory required to hold an object or array at execution time
+
+The object or array is created in the free store (also called heap) - a region of memory assigned to each program for storing dynamically allocated objects
+
+Once memory is allocated in the free store, you can access it via the pointer that the operator new returns
+
+When you no longer need the memory, you can return it to the free store by using the delete operator to deallocate (release) the memory, which can be
+reused in future new operations.
+
+
+Time is an object. Below we create memory for object Time
+
+Time *timePtr = new Time;
+
+The new operator allocates storage of proper size for an object of type Time
+timPtr will hold the address for the Time object starts
+
+
+Example 2: 
+Product *applePtr = new Product;
+Product *orangePtr = new Product;
+
+applePtr holds an address location for an object of type Product
+
+To destroy a dynamically allocated object and free the space use the delete operator 
+
+delete timePtr;
+delete applePtr;
+delete orangePtr;
+
+Examples: 
+
+double *numPtr = new double (3.14)
+
+Initialize a newly created double to 3.14 and assigns the resulting pointer to numPtr
+
+Enough memory is obtained from the free store to hold a double number. Lets say the starting address of the double is 0x5000. So numPtr will have the value 
+of 0x5000
+
+int *gradeArray = new int[10]; 
+
+creates memory location for 10 integers and assigns the beginning address of first element of the array to gradeArray
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

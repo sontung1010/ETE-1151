@@ -1,0 +1,51 @@
+TUNG DO
+
+set time for object 1 to 02:03:04
+print object 1
+02:03:04
+set hour for object 1 to 25
+print object 1
+02:03:04
+set hour for object 1 to 20
+set minute for object 1 to 62
+print object 1
+20:03:04
+set minute for object 1 to 30
+print object 1
+20:30:04
+set second for object 1 to 69
+print object 1
+20:30:04
+set second for object 1 to 40
+print object 1
+20:30:40
+increment seconds for object 1
+increment seconds for object 1
+print object 1
+20:30:42
+increment minutes for object 1
+increment minutes for object 1
+print object 1
+20:32:42
+increment hours for object 1
+increment hours for object 1
+print object 1
+22:32:42
+set time for object 2 to 22:32:42
+compare object 1 and object 2
+Object 1 and Object 2 match
+compare object 2 and object 2
+Object 2 and Object 2 match
+set time for object 2 to 22:30:42
+print object 2
+22:30:42
+compare object 2 and object 1
+Object 2 and Object 1 do not match
+compare object 1 and object 1
+Object 1 and Object 1 match
+set time for object 2 to 23:59:59
+print object 2
+23:59:59
+increment seconds for object 2
+print object 2
+23:60:00

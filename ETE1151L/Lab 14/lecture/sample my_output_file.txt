@@ -1,0 +1,47 @@
+J. Nazari
+set time for object 1 to 05:04:09
+print object 1
+05:04:09
+set time for object 2 to 10:09:16
+print object 2
+10:09:16
+set hour for object 1 to 12
+print object 1
+12:04:09
+set hour for object 2 to 11
+print object 2
+11:09:16
+set minute for object 1 to 45
+print object 1
+12:45:09
+set minute for object 2 to 46
+print object 2
+11:46:16
+set second for object 1 to 30
+print object 1
+12:45:30
+set second for object 2 to 19
+print object 2
+11:46:19
+increment seconds for object 1
+print object 1
+12:45:31
+increment seconds for object 2
+print object 2
+11:46:20
+increment minutes for object 1
+print object 1
+12:46:31
+increment minutes for object 2
+print object 2
+11:47:20
+increment hours for object 1
+print object 1
+13:46:31
+increment hours for object 2
+print object 2
+12:47:20
+compare object 1 and object 2
+Object 1 and Object 2 do not match
+compare object 1 and object 1
+Object 1 and Object 1 match

@@ -1,0 +1,93 @@
+Use do ... while (condition) when you want to do something at least once.
+in contrast to while (some condition) can be done 0 or more times
+
+
+condition1 condition2 
+if a person is rich AND the person has expensive car then print
+	person is rich 
+
+condition1 = person is rich 
+condition2 = person has expensive car 
+
+use symbol && for logical AND
+
+condition1 	condition2  			condition1 && condition2
+True		False 				False
+False 		False 				False 
+False 		True 				False 
+True 		True 				True
+
+Logical AND is true only when both conditions are true 
+
+=============================================
+Logical OR
+
+use symbol || for logical OR
+
+if you have food OR you have drinks
+	I will come to your party 
+
+condition1 you have food 
+condition2 you have drinks 
+
+condition1	condition2 		condition1 || condition2
+True 		False 			True 
+False 		True 			True 
+False 		False 			False 
+True 		True 			True 
+
+Logical OR is false when both conditions are false otherwise is true 
+
+=================================================
+Logical not 
+
+use ! for logical NOT 
+
+if (not(weather rainy))
+	I go to surf 
+
+
+Condition = weather rainy 
+
+Condition 		not(Condition)
+True 			False 
+False 			True 
+
+What does the following evaluates 
+
+!(true || false)
+
+it evaluates to false 
+
+if (!(true || false)) {
+	cout << "hello\n";
+} else {
+	cout << "hi\n";
+}
+
+it will print hi 
+
+(!true || (true || false))
+(!true || true)
+(false || true)
+true 
+
+
+=====================
+(!(true || (true && false)))
+(!(true || false)
+(!(true))
+false
+
+
+
+HOMEWORK 
+5 times 
+enter your response 1-4
+1:great
+2: super
+3: fantastic 
+4: perfect 
+default: sweet 
+
+see 02DoWhile

@@ -1,0 +1,9 @@
+due on Monday 
+NAME 
+enter data: a12 press enter
+hello class press enter
+
+OUTPUT: 
+ch1 = a 
+num1 = 12 
+line = hello class 

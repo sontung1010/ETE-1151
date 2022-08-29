@@ -1,0 +1,24 @@
+Recursion
+
+A recursion function is a function that it calls itself 
+
+The algorithm for recursion is that you reduce the problem size in each iteration of the function call
+
+n! 	factorial n
+I can reduce it to n*(n-1)!
+
+(n-1)! can be reduced to (n-1)*(n-2)!
+...
+
+1! = 1
+
+In the call factorial(5), how many times does the factorial get called?
+5 times 
+
+factorial(5)
+	5 * factorial(4)
+		4 * factorial(3)
+			3 * factorial (2)
+				2 * factorial(1)
+					1
+======================================

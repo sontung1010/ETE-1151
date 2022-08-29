@@ -1,0 +1,26 @@
+Our task is to write a program that allows the person to enter N number of grades. 
+N >= 0. 
+
+End of grade is indicated by -1. This is referred to as Centinal value 
+
+As a example if you want to enter 5 grades you type 
+100
+90
+89
+52
+89
+-1
+
+
+Refer to 02Whilegrade
+
+October 9 Quiz #2
+
+Midterm Exam Monday October 14 
+
+Final Exam Wednesday December 11 3pm to 4h50
+
+==================================================================================
+Assignment Operators 
+
+See Assignment 03

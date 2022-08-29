@@ -1,0 +1,201 @@
+main()
+every program has a function main where execution begins. The parenthesis following main indicates to the compiler that it is a function.
+Exactly one function must be named main. C++ executes at main even if it is not the first function in the program
+
+char 		1 byte of memory 
+int 		4 bytes of memory (machine dependent)
+float 		4 bytes of memory 
+double 		8 bytes of memory 
+bool 		1 byte of memory 
+
+A left { begins the body of each function. A corresponding right } must end the function
+
+printf(" \n");
+
+\t horizontal tab
+\\ single backslash 
+\" single "
+\' single '
+\a alert sound system bell
+
+variables are used to store values. Variable name also called an identifier consists of sequence of letters, digits and underscore, but may not begin 
+with a digit 
+
+* a multiplication operator 
++ an addition operator
+- a substraction operator 
+/ a division operator
+% a modulus operator
+
+%d 	control string format expression 
+%c 	single character 
+%s 	string
+%f 	floating number (single precision)
+%lf 	floating number (double precision)
+%e	floating number (scientific notation)
+%g 	floating number (it uses e or f which is convenient)
+
+printf("%s %d %f %c%c\n", "one", 2, 3.3, 'G', 'O');
+
+%m.nf
+m=field length
+n=precision is the number of decimal digits printed to the right of decimal point
+
+%mf only field length is specified
+%.nf only precision is specified 
+
+int x;
+scanf_s("%d", &x);   the %d causes the input characters to be interpreted as a decimal integer and causes the resulting value to stored at address of x 
+
+x is stored at address 0x2000, the user type 1200 => address of x is 0x2000; content of x is 1200 
+
+ch1=getchar();
+ch2=getchar();
+first = getchar();
+middle = getchar();
+last = scanf_s("%c", &last);
+age = scanf_s("%d", &age);
+
+The user type a\nAVD20\n
+ch1 = 'a'
+ch2 = '\n'
+first = 'A'
+middle = 'V'
+last = 'D'
+age = 20
+when reading numbers, all white spaces such as \n, \t are ignored
+
+read a string 123\nhello class\n, we need getchar to skip past \n. If you do not have getchar, gets_s it reads \n as the string
+
+A preprocessor directive is a message to C++ preprocessor. Lines that begin with # are precessed by the preprocessor 
+
+#include <iostream>  	this must be included for any program that outputs data to the screen or input data from the keyboard. If you don't include this,
+cout is not recognized 
+the std:: before cout is required unless we use namespace std
+
+cin 	standard input stream 
+cerr 	standard error stream 
+
+double ans2 = num1 / num2;
+ans2 = integer;
+
+double ans2 = (double)num1 / num2; 	or 	double ans2 = num1 / (double)num2; 	or 	ans2 = (double)num1 / (double)num2;
+ans2 = double;
+
+== equal 
+!= not equal 
+>  greater 
+>= greater or equal 
+x += y   # x = x + y
+x /= y   # x = x / y
+
+post-increment a++ b--
+pre-increment ++a --b
+in an equation, executed order: pre-increment -> main equation -> post-increment 
+
+Condition: 
+
+if (condition) {
+	action 1
+} 
+	perform action 1 if the condition is true 
+
+if (condition) {
+	action 1 
+} else {
+	action 2
+}
+	perform action 1 if the condtion is true else do action 2
+
+*ternary operator ?:
+y = (condition)? action1 : action2 
+
+y: some int
+?: do action1 
+:: else, do action2
+
+nonzero expression evaluates to true: 
+if (100) = true 
+if (0) = false 
+
+switch: perform 1 of many different actions
+cin >> a;
+switch (a) {
+case 1:
+	cout << " \n";
+	x++;
+	break;
+case 2: 
+	cout << " \n";
+	x++;
+	break;
+...
+default: 
+	cout << " \n";
+	x++;
+	break;
+}
+
+Loop: 
+- While loop (do something 1 or more) 
+
+while (some condition) {
+	action
+}
+every time the condition is true, the loop gets executed 
+
+if you put ';' instead of '{}' after the condition (or put the ';' into the '{}'), you get infinite loop of doing nothing (';')
+ifinite loop also occur if there is no limit in the condition 
+
+- For loop (do something 0 or more)
+
+for (define and initialize variable; condition; increment/decrement) {
+	body of code
+}
+
+syntax error 		program does not even compile. you may have missing ;
+logic errorr 		program produces wrong result 
+
+- do ... while loop (do something 0 or more) 
+
+do {
+	body of loop
+} while (condition) 
+
+&& logical AND
+|| logical OR
+!  logical NOT
+
+Random numbers
+
+int n;
+unsigned seed;
+cout << "Enter seed: ";
+cin >> seed;
+
+srand(seed);
+
+//print 10 random numbers 
+for (int i = 0; i < 10; i++) {
+	n = rand(); // a random number between 0 and biggest integer 
+	cout << n << "\n";
+}
+
+//print 10 random numbers between 0 and 19 
+for (int i = 0; i < 10; i++) {
+	n = rand() % 20;  // a random number between 0 and 19
+	cout << n << "\n";
+}
+
+//print 10 random numbers between 1 and 6 
+for (int i = 0; i < 10; i++) {
+	n = rand() % 6 + 1;  // a random number between 1 and 6
+	cout << n << "\n";
+}
+
+//print 10 random numbers symbols 2, 7, or 12
+for (int i = 0; i < 10; i++) {
+	n = 2 + 5 * (rand() % 3);  
+	cout << n << "\n";
+}
+

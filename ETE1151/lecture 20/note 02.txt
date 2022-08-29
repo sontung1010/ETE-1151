@@ -1,0 +1,48 @@
+enum: use ennumeration declaration to define named constants
+
+enum Color {red, green, blue}; 		// each enumerator is associated with a value 
+					// red = 0, green = 1, blue = 2
+
+Color r = red
+
+switch (r) {
+	case red:
+		cout << "red\n";
+		break;
+	case green: 
+		cout << "green\n";
+		break;
+	case blue: 
+		cout << "blue\n";
+		break; 
+
+
+enum usage makes the code easier to read 
+
+enum Foo {
+	a, 		// a = 0 
+	b, 		// b = 1
+	c = 10, 	// c = 10
+	d, 		// d = 11 
+	e = 1, 		// e = 1 
+	f, 		// f = 2
+	g = f + c 	// g = 12
+
+Foo foo1 = g;
+int n = g; 	// n = 12 
+
+======================================
+setw(n) - n is the number of characters to be used as field width
+To use setw(n) you need to include <iomanip>
+
+cout << setw(10) << cout << 77 << "\n";
+--------77 	(- stands for space)
+
+=======================================
+Under solution explorer
+right click FunctionPrototype2 select Add select New item
+select header file and name it 
+
+Under solution explorer
+right click FunctionPrototype2 select Add select New item
+select cpp file and name it 
