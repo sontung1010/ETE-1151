@@ -1,5 +1,0 @@
-﻿  employee class example.cpp
-E:\du học Mỹ\CLASSES\ETE1151\lecture 28\employee class example 02\employee class example\employee class example\employee class example.cpp(14,17): error C3867:  'Employee::print': non-standard syntax; use '&' to create a pointer to member
-  EmployeeClassExample.cpp
-  Generating Code...
-E:\du học Mỹ\CLASSES\ETE1151\lecture 28\employee class example 02\employee class example\employee class example\employee class example.cpp(15,17): error C3867:  'Employee::print': non-standard syntax; use '&' to create a pointer to member

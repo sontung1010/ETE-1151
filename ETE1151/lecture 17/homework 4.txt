@@ -1,3 +1,0 @@
-Add print_product(product_t p, string s)
-
-Modify all the code in main to use this new function 

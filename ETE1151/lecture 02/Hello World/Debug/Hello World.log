@@ -1,3 +1,0 @@
-﻿  Hello World.cpp
-E:\du học Mỹ\CLASSES\ETE1151\lecture\Hello World\Hello World.cpp(11,2): error C2065:  'cout': undeclared identifier
-E:\du học Mỹ\CLASSES\ETE1151\lecture\Hello World\Hello World.cpp(12,2): error C3861:  'system': identifier not found

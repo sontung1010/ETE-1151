@@ -1,3 +1,0 @@
-﻿  seekg example.cpp
-E:\du học Mỹ\CLASSES\ETE1151\lecture 25\seekg example 02\seekg example\seekg example\seekg example.cpp(19,13): warning C4244:  'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
-  seekg example.vcxproj -> E:\du học Mỹ\CLASSES\ETE1151\lecture 25\seekg example 02\seekg example\Debug\seekg example.exe
